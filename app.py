@@ -29,7 +29,7 @@ def index():
 
     dataframe_blobdata = pd.read_csv(LOCALFILENAME, on_bad_lines='skip')
     print('the size of the data is: %d rows and  %d columns' % dataframe_blobdata.shape)
-    head_data=dataframe_blobdata.head(10)
+    head_data=dataframe_blobdata.head(20)
     return str(head_data)
 
 
